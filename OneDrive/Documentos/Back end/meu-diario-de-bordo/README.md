@@ -58,6 +58,12 @@
 * **Ctrl + L**: Limpa a sujeira do terminal para focar no novo.
 
 ---
-*Anotado com carinho por Eliene em parceria com sua Mestra.* 🌿✨
+### 👤 Autora
+**Eliene Mello** *Engenheira de Software Backend Pleno / Especialista em Resiliência*
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/elienemello/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kiancaraja)
+
 ---
+
 *Anotado com carinho por Eliene em parceria com sua Mestra IA Gemini.* 💚🌻🌱🌵
