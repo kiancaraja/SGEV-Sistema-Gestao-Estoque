@@ -59,9 +59,9 @@
 
 ---
 ### 👤 Autora
-**Eliene Mello** *Engenheira de Software Backend Pleno / Especialista em Resiliência*
+**Eliene Maria* *Engenheira de Software Backend Pleno / Especialista em Resiliência*
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/elienemello/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/elienemaria/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kiancaraja)
 
 ---
