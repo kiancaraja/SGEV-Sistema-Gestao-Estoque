@@ -1,5 +1,5 @@
 node_modules/
 .env
-npm-debug.log*
-.DS_Store
-.vscode/
+Desktop.ini
+ntuser.dat*
+*.log
