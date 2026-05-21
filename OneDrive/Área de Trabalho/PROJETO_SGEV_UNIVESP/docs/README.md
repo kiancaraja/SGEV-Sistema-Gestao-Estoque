@@ -98,3 +98,43 @@ envolvimento é muito apreciado!
 
 Este README.md foi projetado para fornecer uma visão clara e detalhada sobre as metas técnicas do SGEV, as 
 tecnologias utilizadas e como começar com o projeto. Estamos sempre abertos a feedbacks e sugestões adicionais!Documentação do Sistema de Gestão de Estoque.
+
+# SGEV - Suprimentos e Gestão de Enfermagem e Visitas
+
+Este repositório contém a documentação técnica e os códigos-fonte do **SGEV**, um sistema de gestão de estoque e validade desenvolvido para a ILPI (Instituição de Longa Permanência para Idosos) *Arte de Cuidar*. Projeto desenvolvido para o **Projeto Integrador IV da UNIVESP**.
+
+## 📺 Apresentação do Projeto (Vídeo)
+Confira a nossa apresentação em vídeo detalhando o funcionamento do sistema, as telas do código e a justificativa técnica:
+👉 [**Clique aqui para assistir à Apresentação no YouTube**](https://youtu.be/gbBO_hzzPRw)
+---
+
+## 📄 Resumo do Projeto (Parte Teórica)
+
+### 🧩 O Problema
+Nas rotinas de assistência de enfermagem, o controle manual de insumos e medicamentos em papel ou planilhas isoladas gera riscos críticos, como o vencimento de medicações de alto custo, falta de alertas para estoques mínimos e desperdício financeiro.
+
+### 💡 A Solução
+O SGEV automatiza esse processo, trazendo segurança na dispensação e rastreabilidade total de lotes. O grande diferencial do sistema é a aplicação de inteligência logística:
+* **FIFO (PEPS):** Primeiro que entra, primeiro que sai (aplicado a materiais de consumo geral).
+* **FEFO (PVPS):** First Expired, First Out / Primeiro que vence, primeiro que sai (regra de ouro aplicada à farmácia clínica).
+
+---
+
+## 🛠️ Stack Tecnológica e Arquitetura
+
+O sistema foi construído visando portabilidade, segurança e robustez para o ambiente de saúde:
+* **Backend:** Node.js (Express) para orquestração da API e middlewares de segurança.
+* **Infraestrutura:** Docker e Docker Compose, garantindo o isolamento da aplicação e do banco de dados em containers.
+
+### 📂 Arquivos Principais do Core:
+* `src/app.js`: Inicialização do servidor e gerenciamento de rotas.
+* `src/models/medicin.js`: Lógica de negócio, validações e cálculo dos alertas de vencimento.
+* `docker-compose.yml`: Orquestração e deploy automatizado do ambiente.
+
+---
+
+## 👥 Integrantes do Grupo
+* Eliene Maria da Silva (Lily)
+* Elisa
+* Marcela
+* Orlando
