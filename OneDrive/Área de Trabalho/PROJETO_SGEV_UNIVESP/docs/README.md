@@ -1,140 +1,54 @@
-# Sistema de Gestão de Estoque e Validade (SGEV)
-
-O SGEV é um sistema desenvolvido com foco em medicamentos e insumos hospitalares, tendo como objetivo principal 
-a gestão eficiente e a segurança do estoque desses produtos. Este projeto foi criado para garantir que os 
-recursos médicos estejam disponíveis quando precisados, ajudando a reduzir o risco de erros na administração de 
-medicamentos.
-
-## Metas Técnicas
-
-### Confiabilidade (ISO/IEC 25010)
-A confiabilidade do SGEV foi uma prioridade durante o desenvolvimento. O sistema foi projetado para garantir 
-que todas as operações, desde a entrada e saída de produtos até a verificação de prazos de validade, sejam 
-realizadas com precisão e segurança.
-
-- **Durabilidade**: O sistema é projetado para resistir ao uso frequente e possíveis desafios ambientais.
-- **Disponibilidade**: Garantimos que o sistema esteja disponível 24/7, com redundância adequada para minimizar 
-a chance de downtime.
-- **Foi utilizadas práticas recomendadas de segurança em software** como validação dos dados de entrada e 
-controle de acessos restritos.
-
-### Manutenibilidade (ISO/IEC 25010)
-O SGEV foi projetado com uma visão em longo prazo, considerando a facilidade de manutenção e escalabilidade. O 
-código-fonte é bem estruturado, seguindo padrões de boas práticas de desenvolvimento.
-
-- **Modularização**: O sistema está composto por componentes menores e independentes, facilitando a atualização 
-e o troubleshooting.
-- **Documentação**: Todas as partes importantes do projeto estão documentadas para que qualquer membro da 
-equipe ou terceiros possam entender rapidamente como o sistema funciona.
-- **Controle de Versão com Git**: O uso de controle de versão permite rastrear alterações, colaborar em equipe 
-e reverter a qualquer momento.
-
-## Tecnologias Utilizadas
-
-### Docker
-O SGEV foi containerizado usando Docker para garantir que ele seja replicável e portátil. Isso permite uma 
-implantação consistente e rápida em diferentes ambientes de desenvolvimento e produção.
-
-### Node.js
-Node.js foi escolhido como plataforma principal para o backend do sistema, aproveitando suas capacidades de 
-processamento assíncrono e sua comunicação eficiente entre serviços.
-
-## Controle de Estoque
-
-O controle de estoque é um componente crucial do SGEV. Este sistema inclui funcionalidades específicas para 
-lidar com medicamentos e insumos hospitalares, garantindo que todos os produtos estejam sempre disponíveis 
-quando necessário. Aqui estão alguns pontos importantes sobre o controle de estoque:
-
-- **Entrada de Produtos**: Funcionalidade para registrar a entrada de novos produtos no estoque.
-- **Saída de Produtos**: Sistema de saída que garante que os medicamentos sejam retirados corretamente e com 
-segurança.
-- **Validação dos Prazos de Validade**: Verificação automática das datas de validade dos produtos para evitar 
-uso após o prazo.
-
-## Referências
-
-A implementação do controle de estoque no SGEV foi inspirada nas normas ISO/IEC 25010 e nas referências 
-teóricas abaixo:
-
-- **Norma ISO/IEC 25010**: Este padrão estabelece uma metodologia para avaliar a confiabilidade, eficiência e 
-usabilidade dos sistemas de informação. Ele define métodos rigorosos para avaliar como esses sistemas atendem 
-às necessidades do usuário.
-
-- **Trabalho Acadêmico "Controle de estoque em sistemas de gerenciamento de medicamentos":**
-  - Autor: Roseli Maria de Almeida Rocha
-  - Orientador: José Carlos dos Santos Baranauskas
-
-Este trabalho aborda os principais aspectos do controle de estoque em contextos médicos, incluindo a 
-importância da segurança e eficiência nas operações de armazenamento.
-
-## Próximos Passos
-
-- **Testes de Qualidade**: Realizar testes rigorosos para garantir que todas as funcionalidades estejam 
-corretamente implementadas.
-- **Implantação em Produção**: Preparar o sistema para a implantação em um ambiente de produção seguro e 
-robusto.
-
-## Contribuição
-
-Se você quiser contribuir com este projeto, sinta-se à vontade para abrir issues ou enviar pull requests. Seu 
-envolvimento é muito apreciado!
-
-### Como Rodar o Projeto
-
-1. Clonar o repositório
-   ```bash
-   git clone https://github.com/https://github.com/kiancaraja/SGEV-Sistema-Gestao-Estoque/sgev.git
-   ```
-2. Navegar até a pasta do projeto
-   ```bash
-   cd sgev
-   ```
-3. Criar e iniciar o Docker Compose
-   ```bash
-   docker-compose up --build
-   ```
+# SGEV - Sistema de Gestão de Estoque e Validade
+> **Projeto Integrador XV - UNIVESP** > *Segurança farmacêutica e eficiência operacional para a ILPI Arte de Cuidar.*
 
 ---
 
-Este README.md foi projetado para fornecer uma visão clara e detalhada sobre as metas técnicas do SGEV, as 
-tecnologias utilizadas e como começar com o projeto. Estamos sempre abertos a feedbacks e sugestões adicionais!Documentação do Sistema de Gestão de Estoque.
-
-# SGEV - Suprimentos e Gestão de Enfermagem e Visitas
-
-Este repositório contém a documentação técnica e os códigos-fonte do **SGEV**, um sistema de gestão de estoque e validade desenvolvido para a ILPI (Instituição de Longa Permanência para Idosos) *Arte de Cuidar*. Projeto desenvolvido para o **Projeto Integrador IV da UNIVESP**.
-
-## 📺 Apresentação do Projeto (Vídeo)
-Confira a nossa apresentação em vídeo detalhando o funcionamento do sistema, as telas do código e a justificativa técnica:
-👉 [**Clique aqui para assistir à Apresentação no YouTube**](https://youtu.be/gbBO_hzzPRw)
----
-
-## 📄 Resumo do Projeto (Parte Teórica)
-
-### 🧩 O Problema
-Nas rotinas de assistência de enfermagem, o controle manual de insumos e medicamentos em papel ou planilhas isoladas gera riscos críticos, como o vencimento de medicações de alto custo, falta de alertas para estoques mínimos e desperdício financeiro.
-
-### 💡 A Solução
-O SGEV automatiza esse processo, trazendo segurança na dispensação e rastreabilidade total de lotes. O grande diferencial do sistema é a aplicação de inteligência logística:
-* **FIFO (PEPS):** Primeiro que entra, primeiro que sai (aplicado a materiais de consumo geral).
-* **FEFO (PVPS):** First Expired, First Out / Primeiro que vence, primeiro que sai (regra de ouro aplicada à farmácia clínica).
-
----
-
-## 🛠️ Stack Tecnológica e Arquitetura
-
-O sistema foi construído visando portabilidade, segurança e robustez para o ambiente de saúde:
-* **Backend:** Node.js (Express) para orquestração da API e middlewares de segurança.
-* **Infraestrutura:** Docker e Docker Compose, garantindo o isolamento da aplicação e do banco de dados em containers.
-
-### 📂 Arquivos Principais do Core:
-* `src/app.js`: Inicialização do servidor e gerenciamento de rotas.
-* `src/models/medicin.js`: Lógica de negócio, validações e cálculo dos alertas de vencimento.
-* `docker-compose.yml`: Orquestração e deploy automatizado do ambiente.
-
----
-
-## 👥 Integrantes do Grupo
-* Eliene Maria da Silva (Lily)
+## 👥 Integrantes
+* Eliene Maria da Silva
 * Elisa
 * Marcela
-* Orlando
+* Orlando Guilherme
+
+---
+
+## 📌 Sobre o Projeto
+O **SGEV** (Sistema de Gestão de Estoque e Validade) foi desenvolvido para solucionar os gargalos críticos do controle manual (listas em papel e anotações informais) na Instituição de Longa Permanência para Idosos (ILPI) "Arte de Cuidar". O sistema automatiza o gerenciamento de insumos e medicamentos de alto custo, mitigando riscos de desperdício e falta de alertas para estoques mínimos.
+
+### 🛡️ Regra de Ouro: Lógica Inteligente FIFO e FEFO
+Para garantir a máxima segurança farmacêutica, o software prioriza a dispensação inteligente:
+* **FEFO (First Expired, First Out / PVPS):** O medicamento que vence primeiro é o primeiro que sai. Aplicado estritamente na farmácia clínica.
+* **FIFO (First In, First Out / PEPS):** O primeiro material que entra é o primeiro que sai. Aplicado a materiais de consumo geral e escritório.
+
+---
+
+## 🚀 Demonstração do Software e Testes Práticos
+*Nota para a banca: Abaixo constam as cookies/evidências do ambiente de desenvolvimento web em plena execução, validando a solução tecnológica proposta.*
+
+### 1. Interface Web do Usuário (Painel de Controle)
+Exibição do ecossistema rodando no navegador, com listagem de fármacos, organização por lotes e aplicação automática da prioridade FEFO:
+![Painel do Sistema Web - SGEV](https://raw.githubusercontent.com/Vaic/PROJETO_SGEV_UNIVESP/main/1.jpeg)
+
+### 2. Alertas de Validade e Estoque Mínimo
+Sistema de monitoramento inteligente indicando visualmente os medicamentos próximos ao vencimento:
+![Alertas de Validade em Execução](https://raw.githubusercontent.com/Vaic/PROJETO_SGEV_UNIVESP/main/2.jpeg)
+
+---
+
+## 🛠️ Arquitetura e Ecossistema Tecnológico
+A solução foi construída com foco em portabilidade, robustez e rapidez de processamento:
+
+* **Backend:** Node.js (Servidor Express, gerenciamento de rotas e middlewares de segurança).
+* **Core Loop (`src/app.js`):** Ponto de entrada que orquestra a aplicação e centraliza as configurações de ambiente.
+* **Módulo de Negócio (`src/models/medicin.js`):** Inteligência responsável pela validação de campos obrigatórios, cálculo de alertas e ordenação de lotes.
+* **Infraestrutura:** Docker Containers (Garantia de isolamento, segurança de dados sensíveis e eliminação de conflitos locais).
+
+### Como rodar a aplicação localmente via terminal (Deploy Automatizado)
+Certifique-se de ter o Docker instalado e execute o comando abaixo na raiz do projeto para subir o banco de dados e a aplicação de forma isolada:
+
+```bash
+docker-compose up --build
+
+---
+
+## 📄 Documentação Científica
+O referencial teórico completo, a justificativa e os critérios normativos (ANVISA RDC nº 502/2021) que embasaram o desenvolvimento deste ecossistema estão registrados no documento oficial do grupo.
