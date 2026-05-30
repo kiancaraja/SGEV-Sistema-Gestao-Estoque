@@ -1,0 +1,1 @@
+Para o desenvolvimento da infraestrutura de backend e auxílio na revisão de documentação técnica, foram utilizadas ferramentas de Inteligência Artificial Generativa (IA), atuando como suporte na otimização de scripts e estruturação de dados conforme as normas ISO/IEC 25010.
